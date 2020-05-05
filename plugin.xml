@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-customaction"
+    version="1.0.0">
+    <name>Cordova CustomAction Plugin</name>
+    <description>
+        Invoke custom action on native code from JS
+    </description>
+    <license>MIT</license>
+    <keywords>cordova,custom,action</keywords>
+    <repo>https://github.com/ibrahimawadhamid/cordova-plugin-customaction.git</repo>
+    <issue>https://github.com/ibrahimawadhamid/cordova-plugin-customaction/issues</issue>
+
+    <js-module src="www/plugin.js" name="CustomAction">
+        <!-- This is the window variable name you want, window.CustomAction -->
+        <clobbers target="window.CustomAction" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CustomAction">
+                <param name="ios-package" value="CDVCustomAction" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+         <source-file src="src/ios/CDVCustomAction.swift" />
+    </platform>
+</plugin>

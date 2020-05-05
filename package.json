@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-customaction",
+  "version": "1.0.0",
+  "types": "./types/index.d.ts",
+  "description": "Invoke custom action on native code from JS",
+  "author": {
+    "name": "Ibrahim Awad",
+    "email": "ibrahim.a.hamid@gmail.com"
+  },
+  "cordova": {
+    "id": "cordova-plugin-customaction",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibrahimawadhamid/cordova-plugin-customaction"
+  },
+  "bugs": {
+    "url": "https://github.com/ibrahimawadhamid/cordova-plugin-customaction/issues"
+  },
+  "keywords": [
+    "cordova",
+    "custom",
+    "action",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "license": "MIT"
+}

@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-customaction"
-    version="1.0.0">
+    version="1.1.0">
     <name>Cordova CustomAction Plugin</name>
     <description>
         Invoke custom action on native code from JS

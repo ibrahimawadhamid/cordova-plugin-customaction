@@ -25,7 +25,7 @@ class CDVCustomAction: CDVPlugin {
         var firstParameter = command.argument(at: 0) as? String ?? ""
         
         if firstParameter.characters.count <= 0 {
-            print("The ffirstParameter is required")
+            print("The firstParameter is required")
         }
         
         pluginResult = CDVPluginResult(status: CDVCommandStatus_OK)
